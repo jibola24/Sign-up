@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .input{
+        padding: 10px 40px 5px 10px;
+        margin-left: 30px;
+    }
+</style>
+<body style="color:darkslateblue; display: flex; justify-content: center; background-color: burlywood;">
+    <fieldset style="width: fit-content; ">
+            <legend> <h2 style="color: darkblue;">Register Page</h2></legend>
+            Create your account. It only takes a minute <p></p>
+
+            <form  id="form" action="">
+                <div>
+                    <input id="fname" class="input" type="text" placeholder="Firstname" style="color: cornflowerblue;"> <p></p>
+                    <input type="text"  class="input" id="lname" placeholder="Lastname" style="color: cornflowerblue;"> <p></p>
+                    <input type="email" class="input" name="" id="email" placeholder="email" style="color: cornflowerblue;" required>  <p></p>
+                    <input type="password" class="input" placeholder="Password" id="password" style="color: cornflowerblue;" required minlength="6"> <p></p>
+                    <!-- <input type="password" placeholder="Confirm Pasword" style="color: cornflowerblue;"> <p></p>     -->
+                </div>
+               
+                <div id="gender" style="margin-left: 40px;">
+                    <label> Female <input type="radio" name="select" class="sex"></label>
+                    <label>Male <input type="radio" name="select" class="sex" value="male"></label>
+                </div>
+
+                <p><small> By clicking Sign Up, you agree to our Terms, Data Policy <br> and Cookie Policy.</small> </p>
+                <button type="submit" style="margin-left: 120px; padding:5px;">Sign up</button>
+            </form>
+            <small>Already have an account? <a href="login.html">Sign In</a></small>
+    </fieldset>
+
+    <script src="form.js"></script>
+</body>
+</html>
